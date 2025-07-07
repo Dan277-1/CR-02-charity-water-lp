@@ -1,3 +1,19 @@
+/* Add transformation effects to images and buttons for interactivity */
+img {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+img:hover {
+    transform: scale(1.05) rotate(-2deg);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.donate-button, .login-button {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.donate-button:hover, .login-button:hover {
+    transform: scale(1.07);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
 /* Increase font size of all paragraphs by 15% */
 p {
     font-size: 1.15em;
